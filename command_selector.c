@@ -15,15 +15,15 @@ void (*command_selector(char *command))(stack_t **, unsigned int)
 			{"pint", pint},
 			{"pop", pop},
 			{"swap", swap},
+			{"add", _add},
+			{"nop", _nop},
 			/**
-			 *{"add", _add},
 			 *{"sub", _sub},
 			 *{"div", _div},
 			 *{"mod", _mod},
 			 *{"mul", _mul},
 			 *{"pchar", pchar},
 			 *{"pstr", pstr},
-			 *{"nop", _nop},
 			 *{"rot1", rot1},
 			 *{"rotr", rotr},
 			 */

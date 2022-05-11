@@ -36,6 +36,13 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/**
+ * struct cart - main holder for free and exit procedures
+ * @nro_line: nro line related to the file instructions
+ * @buffer: line read from file
+ * @argumen:tokens captured from line
+ * @fd:monty instruction file
+ */
 typedef struct cart
 {
 	int nro_line;
@@ -68,6 +75,10 @@ void swap(stack_t **stack_element, unsigned int line_number);
 /** print functions **/
 void pall(stack_t **stack_element, unsigned int line_number);
 void pint(stack_t **stack_element, unsigned int line_number);
+
+/** math functions **/
+void _nop(stack_t **stack_element, unsigned int line_number);
+void _add(stack_t **stack_element, unsigned int line_number);
 
 /** exit functions **/
 void exit_failure(stack_t **stack_element, const char *message);
