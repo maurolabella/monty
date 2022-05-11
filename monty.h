@@ -46,4 +46,29 @@ typedef struct cart
 
 cart_t carrier;
 
+/** main driver **/
+void file_failure(char *filename, stack_t **stack_element);
+char *file_process(char *filename);
+int not_commented(char *str);
+void line_tokenizer(stack_t **stack_element);
+
+/** free memory process **/
+void free_stack_t(stack_t **stack_elem);
+void free_all(stack_t **stack_elem);
+
+/** command selector **/
+void (*command_selector(char *command))(stack_t **, unsigned int);
+
+/** i/o functions**/
+int is_a_number(char *argument);
+void push(stack_t **stack_element, unsigned int line_number);
+void pop(stack_t **stack_element, unsigned int line_number);
+
+/** print functions **/
+void pall(stack_t **stack_element, unsigned int line_number);
+void pint(stack_t **stack_element, unsigned int line_number);
+
+/** exit functions **/
+void exit_failure(stack_t **stack_element, const char *message);
+
 #endif
