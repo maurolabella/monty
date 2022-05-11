@@ -79,6 +79,9 @@ void pint(stack_t **stack_element, unsigned int line_number);
 /** math functions **/
 void _nop(stack_t **stack_element, unsigned int line_number);
 void _add(stack_t **stack_element, unsigned int line_number);
+void _sub(stack_t **stack_element, unsigned int line_number);
+void _div(stack_t **stack_element, unsigned int line_number);
+
 
 /** exit functions **/
 void exit_failure(stack_t **stack_element, const char *message);

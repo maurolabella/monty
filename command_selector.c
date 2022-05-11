@@ -17,9 +17,9 @@ void (*command_selector(char *command))(stack_t **, unsigned int)
 			{"swap", swap},
 			{"add", _add},
 			{"nop", _nop},
+			{"sub", _sub},
+			{"div", _div},
 			/**
-			 *{"sub", _sub},
-			 *{"div", _div},
 			 *{"mod", _mod},
 			 *{"mul", _mul},
 			 *{"pchar", pchar},
