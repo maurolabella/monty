@@ -21,9 +21,9 @@ void (*command_selector(char *command))(stack_t **, unsigned int)
 			{"div", _div},
 			{"mod", _mod},
 			{"mul", _mul},
+			{"pchar", pchar},
+			{"pstr", pstr},
 			/**
-			 *{"pchar", pchar},
-			 *{"pstr", pstr},
 			 *{"rot1", rot1},
 			 *{"rotr", rotr},
 			 */

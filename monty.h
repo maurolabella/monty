@@ -75,6 +75,10 @@ void swap(stack_t **stack_element, unsigned int line_number);
 /** print functions **/
 void pall(stack_t **stack_element, unsigned int line_number);
 void pint(stack_t **stack_element, unsigned int line_number);
+void pchar(stack_t **stack_element, unsigned int line_number);
+void pstr(stack_t **stack_element, unsigned int line_number);
+
+
 
 /** math functions **/
 void _nop(stack_t **stack_element, unsigned int line_number);
