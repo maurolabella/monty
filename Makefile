@@ -11,7 +11,7 @@ LDFLAGS =
 APPNAME = monty
 EXT = .c
 SRCDIR = /home/mauro/Programming/Holberton/monty
-OBJDIR = /home/mauro/Programming/Holberton/monty
+OBJDIR = /home/mauro/Programming/Holberton/monty/obj
 #INCLDIR = /home/mauro/Programming/Holberton/tmp/simple_shell/include
 
 ############## Do not change anything from here downwards! #############

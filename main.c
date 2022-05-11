@@ -78,6 +78,10 @@ int not_commented(char *str)
 	return (1);
 }
 
+/**
+ * line_tokenizer - tokenizer
+ * @stack_element: receives header to a node list
+ */
 void line_tokenizer(stack_t **stack_element)
 {
 	char *command = NULL;
@@ -106,7 +110,8 @@ void line_tokenizer(stack_t **stack_element)
 					f(stack_element, (unsigned int)carrier.nro_line);
 				else
 				{
-					fprintf(stderr, "L%d: unknown instruction %s\n", carrier.nro_line, command);
+					fprintf(stderr, "L%d: unknown instruction %s\n",
+					carrier.nro_line, command);
 					free_all(stack_element);
 					exit(EXIT_FAILURE);
 				}

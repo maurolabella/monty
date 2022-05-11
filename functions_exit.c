@@ -3,7 +3,7 @@
 /**
  * exit_failure - exits and print message accordint to parameters
  *
- * @stack_element - pointer to node structure
+ * @stack_element: pointer to node structure
  * @message: message to be displayes with fprintf
  */
 void exit_failure(stack_t **stack_element, const char *message)
