@@ -85,3 +85,23 @@ void pop(stack_t **stack_element, unsigned int line_number)
 		exit_failure(stack_element, "L%d: can't pop an empty stack\n");
 	(void)line_number;
 }
+
+/**
+ * swap - swap top two elements from the stack
+ * @stack_element: stack's header
+ * @line_number: line number
+ */
+void swap(stack_t **stack_element, unsigned int line_number)
+{
+	int temporal;
+
+	if (*stack_element && (*stack_element)->next)
+	{
+		temporal = (*stack_element)->n;
+		(*stack_element)->n = (*stack_element)->next->n;
+		(*stack_element)->next->n = temporal;
+	}
+	else
+		exit_failure(stack_element, "L%d: can't swap, stack too short\n");
+	(void)line_number;
+}
