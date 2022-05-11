@@ -69,13 +69,12 @@ char *file_process(char *filename)
  */
 int not_commented(char *str)
 {
-	while (*str != '\0')
-	{
-		if (*str == '#')
-			return (0);
+	while (*str == '\0')
 		str++;
-	}
-	return (1);
+	if (*str == '#')
+		return (0);
+	else
+		return (1);
 }
 
 /**
@@ -111,7 +110,7 @@ void line_tokenizer(stack_t **stack_element)
 				else
 				{
 					fprintf(stderr, "L%d: unknown instruction %s\n",
-					carrier.nro_line, command);
+									carrier.nro_line, command);
 					free_all(stack_element);
 					exit(EXIT_FAILURE);
 				}
