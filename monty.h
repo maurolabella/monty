@@ -63,6 +63,7 @@ void (*command_selector(char *command))(stack_t **, unsigned int);
 int is_a_number(char *argument);
 void push(stack_t **stack_element, unsigned int line_number);
 void pop(stack_t **stack_element, unsigned int line_number);
+void swap(stack_t **stack_element, unsigned int line_number);
 
 /** print functions **/
 void pall(stack_t **stack_element, unsigned int line_number);
