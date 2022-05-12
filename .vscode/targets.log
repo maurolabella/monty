@@ -1,0 +1,658 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu May 12 12:24:44 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+PAPERSIZE = letter
+# environment
+DESKTOP_SESSION = ubuntu
+ 
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 19)
+OBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)/%.o)
+# environment
+XDG_SESSION_CLASS = user
+# makefile (from 'Makefile', line 18)
+SRC = $(wildcard $(SRCDIR)/*$(EXT))
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+IM_CONFIG_PHASE = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/mauro/Programming/Holberton/monty
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 22)
+RM = rm
+# environment
+SNAP_DATA = /var/snap/code/96
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:43641
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'functions_exit.d', line 1)
+MAKEFILE_LIST :=  Makefile command_selector.d main.d functions_list_01.d function_math_02.d function_math_01.d free_complement.d functions_io.d functions_print.d functions_exit.d
+# automatic
+@F = $(notdir $@)
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /var/lib/snapd/desktop/applications/code_code.desktop
+# environment
+USERNAME = mauro
+# makefile (from 'Makefile', line 7)
+CXXFLAGS = -g -Wall -Werror -Wextra -pedantic -std=gnu89
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+_ = /snap/code/96/usr/share/code/code
+# makefile (from 'Makefile', line 25)
+DEL = del
+# environment
+MANAGERPID = 1408
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/mauro
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/96/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/mauro/.local/bin:/home/mauro/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# makefile (from 'Makefile', line 20)
+DEP = $(OBJ:$(OBJDIR)/%.o=%.d)
+# environment
+SESSION_MANAGER = local/mauro-SVT21217CXB:@/tmp/.ICE-unix/1628,unix/mauro-SVT21217CXB:/tmp/.ICE-unix/1628
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/mauro/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/96
+# environment
+SNAP_VERSION = da15b6fd
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+VSCODE_LOG_STACK = false
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = 95604a8c8cda43609a0423e6c0639364
+# makefile (from 'Makefile', line 8)
+LDFLAGS = 
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/96/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = 
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 13061
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# makefile (from 'Makefile', line 13)
+SRCDIR = /home/mauro/Programming/Holberton/monty
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/mauro/Programming/Holberton/monty
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1591
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/mauro
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/mauro/.config/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LOGNAME = mauro
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# makefile (from 'Makefile', line 23)
+DELOBJ = $(OBJ)
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = rkXmz5YR28qQotmbwSciFKnUFNKG4qXupHRMDpmB46AQS-Yz3-nS
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/mauro/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+SNAP_REAL_HOME = /home/mauro
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/mauro/snap/code/96
+# environment
+SHLVL = 0
+# makefile (from 'Makefile', line 6)
+CC = gcc
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-ddf61603-d96c-4d4a-ab2c-f602c765dc71.sock
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = mauro
+# environment
+SNAP_REVISION = 96
+# environment
+LC_MONETARY = en_US.UTF-8
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-ab612523-1.67.1-main.sock
+# environment
+BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
+# makefile (from 'Makefile', line 12)
+EXT = .c
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = en_US.UTF-8
+# makefile (from 'Makefile', line 11)
+APPNAME = monty
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = rkXmz5YR28qQotmbwSciFKnUFNKG4qXupHRMDpmB46AQS-Yz3-nS
+# environment
+LC_NUMERIC = en_US.UTF-8
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 14)
+OBJDIR = /home/mauro/Programming/Holberton/monty/obj
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+SNAP_NAME = code
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 27)
+WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 26)
+EXE = .exe
+# environment
+LC_ADDRESS = en_US.UTF-8
+# environment
+LANG = C
+# environment
+VSCODE_PID = 13108
+# variable set hash-table stats:
+# Load=145/1024=14%, Rehash=0, Collisions=41/213=19%
+
+# Pattern-specific Variable Values
+ 
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2050, inode 13763503): 29 files, no impossibilities.
+# /home/mauro/Programming/Holberton/monty (device 2050, inode 13763503): 29 files, no impossibilities.
+
+# 58 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+%.d: /home/mauro/Programming/Holberton/monty/%.c
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+/home/mauro/Programming/Holberton/monty/obj/%.o: /home/mauro/Programming/Holberton/monty/%.c
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# 2 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+/home/mauro/Programming/Holberton/monty/obj/free_complement.o: /home/mauro/Programming/Holberton/monty/free_complement.c /home/mauro/Programming/Holberton/monty/free_complement.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'free_complement'
+#  Last modified 2022-05-12 00:41:23.690072247
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+functions_list_01.d: /home/mauro/Programming/Holberton/monty/functions_list_01.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_list_01'
+#  Last modified 2022-05-12 12:24:44.427544922
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+/home/mauro/Programming/Holberton/monty/obj/function_math_01.o: /home/mauro/Programming/Holberton/monty/function_math_01.c /home/mauro/Programming/Holberton/monty/function_math_01.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'function_math_01'
+#  Last modified 2022-05-12 00:41:23.650072122
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/function_math_02.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 18:52:31.097963366
+#  File has been updated.
+#  Successfully updated.
+
+all: monty
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+functions_exit.d: /home/mauro/Programming/Holberton/monty/functions_exit.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_exit'
+#  Last modified 2022-05-12 12:24:44.327543495
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+.PHONY: clean cleandep cleanw cleandepw
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+/home/mauro/Programming/Holberton/monty/obj/function_math_02.o: /home/mauro/Programming/Holberton/monty/function_math_02.c /home/mauro/Programming/Holberton/monty/function_math_02.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'function_math_02'
+#  Last modified 2022-05-12 00:41:23.59807196
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/functions_print.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 19:21:43.281931262
+#  File has been updated.
+#  Successfully updated.
+
+command_selector.d: /home/mauro/Programming/Holberton/monty/command_selector.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'command_selector'
+#  Last modified 2022-05-12 12:24:44.467545493
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/main.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-05-11 18:30:21.200752781
+#  File has been updated.
+#  Successfully updated.
+
+/home/mauro/Programming/Holberton/monty/obj/functions_print.o: /home/mauro/Programming/Holberton/monty/functions_print.c /home/mauro/Programming/Holberton/monty/functions_print.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_print'
+#  Last modified 2022-05-12 00:41:23.794072569
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 16:23:17.311174026
+#  File has been updated.
+#  Successfully updated.
+
+free_complement.d: /home/mauro/Programming/Holberton/monty/free_complement.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'free_complement'
+#  Last modified 2022-05-12 12:24:44.399544522
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+function_math_01.d: /home/mauro/Programming/Holberton/monty/function_math_01.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'function_math_01'
+#  Last modified 2022-05-12 12:24:44.447545207
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/command_selector.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 00:13:22.223299937
+#  File has been updated.
+#  Successfully updated.
+
+/home/mauro/Programming/Holberton/monty/obj/main.o: /home/mauro/Programming/Holberton/monty/main.c /home/mauro/Programming/Holberton/monty/main.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+ 
+#  Last modified 2022-05-12 00:41:23.502071663
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/monty.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 00:08:32.96903734
+#  File has been updated.
+#  Successfully updated.
+
+/home/mauro/Programming/Holberton/monty/obj/command_selector.o: /home/mauro/Programming/Holberton/monty/command_selector.c /home/mauro/Programming/Holberton/monty/command_selector.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'command_selector'
+#  Last modified 2022-05-12 00:41:23.450071502
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+function_math_02.d: /home/mauro/Programming/Holberton/monty/function_math_02.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'function_math_02'
+#  Last modified 2022-05-12 12:24:44.415544751
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+cleanw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 69):
+	$(DEL) $(WDELOBJ) $(DEP) $(APPNAME)$(EXE)
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/functions_io.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 16:58:34.845774929
+#  File has been updated.
+#  Successfully updated.
+
+functions_print.d: /home/mauro/Programming/Holberton/monty/functions_print.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_print'
+#  Last modified 2022-05-12 12:24:44.34754378
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+/home/mauro/Programming/Holberton/monty/obj/functions_io.o: /home/mauro/Programming/Holberton/monty/functions_io.c /home/mauro/Programming/Holberton/monty/functions_io.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_io'
+#  Last modified 2022-05-12 00:41:23.742072408
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+main.d: /home/mauro/Programming/Holberton/monty/main.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-05-12 12:24:44.387544351
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# makefile (from 'Makefile', line 35)
+release: CXXFLAGS = -Wall -02 -DNDEBUG
+release: clean monty
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=1/32=3%, Rehash=0, Collisions=0/1=0%
+
+# Not a target:
+.DEFAULT:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+cleandep:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 63):
+	$(RM) $(DEP)
+
+cleandepw:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 74):
+	$(DEL) $(DEP)
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 58):
+	$(RM) $(DELOBJ) $(DEP) $(APPNAME)
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/functions_list_01.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-12 00:40:56.997989254
+#  File has been updated.
+#  Successfully updated.
+
+functions_io.d: /home/mauro/Programming/Holberton/monty/functions_io.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_io'
+#  Last modified 2022-05-12 12:24:44.37554418
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 45):
+	@$(CPP) $(CFLAGS) $< -MM -MT $(@:%.d=$(OBJDIR)/%.o) >$@
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/functions_exit.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 16:30:53.061009155
+#  File has been updated.
+#  Successfully updated.
+
+/home/mauro/Programming/Holberton/monty/obj/functions_list_01.o: /home/mauro/Programming/Holberton/monty/functions_list_01.c /home/mauro/Programming/Holberton/monty/functions_list_01.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_list_01'
+#  Last modified 2022-05-12 00:41:23.550071811
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+monty: /home/mauro/Programming/Holberton/monty/obj/command_selector.o /home/mauro/Programming/Holberton/monty/obj/main.o /home/mauro/Programming/Holberton/monty/obj/functions_list_01.o /home/mauro/Programming/Holberton/monty/obj/function_math_02.o /home/mauro/Programming/Holberton/monty/obj/function_math_01.o /home/mauro/Programming/Holberton/monty/obj/free_complement.o /home/mauro/Programming/Holberton/monty/obj/functions_io.o /home/mauro/Programming/Holberton/monty/obj/functions_print.o /home/mauro/Programming/Holberton/monty/obj/functions_exit.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-05-12 00:41:23.862072781
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 41):
+	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+/home/mauro/Programming/Holberton/monty/obj/functions_exit.o: /home/mauro/Programming/Holberton/monty/functions_exit.c /home/mauro/Programming/Holberton/monty/functions_exit.c /home/mauro/Programming/Holberton/monty/monty.h
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'functions_exit'
+#  Last modified 2022-05-12 00:41:23.830072682
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 52):
+	$(CC) $(CXXFLAGS) -o $@ -c $<
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/free_complement.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 16:30:07.552827205
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+/home/mauro/Programming/Holberton/monty/function_math_01.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-11 18:52:24.013921342
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=39/1024=4%, Rehash=0, Collisions=9/158=6%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 72 / storage = 1853 B / avg = 25 B
+# current buf: size = 8162 B / used = 1853 B / count = 72 / avg = 25 B
+
+# strcache performance: lookups = 193 / hit rate = 62%
+# hash-table stats:
+# Load=72/8192=1%, Rehash=0, Collisions=1/193=1%
+# Finished Make data base on Thu May 12 12:24:44 2022
+
+ 

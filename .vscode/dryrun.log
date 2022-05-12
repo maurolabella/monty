@@ -1,0 +1,16 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/mauro/Programming/Holberton/monty'
+ 
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/command_selector.o -c /home/mauro/Programming/Holberton/monty/command_selector.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/main.o -c /home/mauro/Programming/Holberton/monty/main.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/functions_list_01.o -c /home/mauro/Programming/Holberton/monty/functions_list_01.c
+ 
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/function_math_02.o -c /home/mauro/Programming/Holberton/monty/function_math_02.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/function_math_01.o -c /home/mauro/Programming/Holberton/monty/function_math_01.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/free_complement.o -c /home/mauro/Programming/Holberton/monty/free_complement.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/functions_io.o -c /home/mauro/Programming/Holberton/monty/functions_io.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/functions_print.o -c /home/mauro/Programming/Holberton/monty/functions_print.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o /home/mauro/Programming/Holberton/monty/obj/functions_exit.o -c /home/mauro/Programming/Holberton/monty/functions_exit.c
+gcc -g -Wall -Werror -Wextra -pedantic -std=gnu89 -o monty /home/mauro/Programming/Holberton/monty/obj/command_selector.o /home/mauro/Programming/Holberton/monty/obj/main.o /home/mauro/Programming/Holberton/monty/obj/functions_list_01.o /home/mauro/Programming/Holberton/monty/obj/function_math_02.o /home/mauro/Programming/Holberton/monty/obj/function_math_01.o /home/mauro/Programming/Holberton/monty/obj/free_complement.o /home/mauro/Programming/Holberton/monty/obj/functions_io.o /home/mauro/Programming/Holberton/monty/obj/functions_print.o /home/mauro/Programming/Holberton/monty/obj/functions_exit.o 
+make: Leaving directory '/home/mauro/Programming/Holberton/monty'
+ 

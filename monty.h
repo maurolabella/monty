@@ -91,6 +91,7 @@ void _mod(stack_t **stack_element, unsigned int line_number);
 /** list node functions **/
 int count_nodes(stack_t **stack_element);
 void rotl(stack_t **stack_element, unsigned int line_number);
+void rotr(stack_t **stack_element, unsigned int line_number);
 
 
 
