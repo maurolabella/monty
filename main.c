@@ -70,11 +70,9 @@ char *file_process(char *filename)
 int not_commented(char *str)
 {
 	while (*str == 32)
-	{
 		str++;
-		if (*str == '#')
-			return (0);
-	}
+	if (*str == '#')
+		return (0);
 	return (1);
 }
 
