@@ -46,7 +46,7 @@ void pchar(stack_t **stack_element, unsigned int line_number)
 	stack_t *current = *stack_element;
 
 	if (current)
-		if (current->n >= 32 && current->n <= 126)
+		if (current->n >= 0 && current->n <= 127)
 			printf("%c\n", current->n);
 		else
 			exit_failure(stack_element, "L%d: can't pchar, value out of range\n");
