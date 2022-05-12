@@ -49,21 +49,24 @@ void rotr(stack_t **stack_element, unsigned int line_number)
 {
 	stack_t *to_second = *stack_element, *to_head = *stack_element;
 
-	while (to_head)
+	if (count_nodes(stack_element) >= 2)
 	{
-		if (!to_head->next)
+		while (to_head)
 		{
-			if (to_head->prev)
+			if (!to_head->next)
 			{
-				to_head->prev->next = NULL;
-				to_head->prev = NULL;
-				to_head->next = to_second;
-				to_second->prev = to_head;
-				*stack_element = to_head;
-				break;
+				if (to_head->prev)
+				{
+					to_head->prev->next = NULL;
+					to_head->prev = NULL;
+					to_head->next = to_second;
+					to_second->prev = to_head;
+					*stack_element = to_head;
+					break;
+				}
 			}
+			to_head = to_head->next;
 		}
-		to_head = to_head->next;
+		(void)line_number;
 	}
-	(void)line_number;
 }
