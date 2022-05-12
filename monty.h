@@ -88,6 +88,9 @@ void _div(stack_t **stack_element, unsigned int line_number);
 void _mul(stack_t **stack_element, unsigned int line_number);
 void _mod(stack_t **stack_element, unsigned int line_number);
 
+/** list node functions **/
+int count_nodes(stack_t **stack_element);
+void rotl(stack_t **stack_element, unsigned int line_number);
 
 
 

@@ -23,8 +23,8 @@ void (*command_selector(char *command))(stack_t **, unsigned int)
 			{"mul", _mul},
 			{"pchar", pchar},
 			{"pstr", pstr},
+			{"rotl", rotl},
 			/**
-			 *{"rot1", rot1},
 			 *{"rotr", rotr},
 			 */
 			{NULL, NULL}};
