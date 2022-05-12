@@ -27,15 +27,16 @@ void rotl(stack_t **stack_element, unsigned int line_number)
 {
 	stack_t *moving = *stack_element, *target_position = *stack_element;
 
-	if (count_nodes(stack_element) < 2)
-		return;
-	*stack_element = (*stack_element)->next;
-	(*stack_element)->prev = NULL;
-	while (target_position->next)
-		target_position = target_position->next;
-	moving->prev = target_position;
-	moving->next = NULL;
-	target_position->next = moving;
+	if (count_nodes(stack_element) >= 2)
+	{
+		*stack_element = (*stack_element)->next;
+		(*stack_element)->prev = NULL;
+		while (target_position->next)
+			target_position = target_position->next;
+		moving->prev = target_position;
+		moving->next = NULL;
+		target_position->next = moving;
+	}
 	(void)line_number;
 }
 
