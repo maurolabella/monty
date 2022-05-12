@@ -49,6 +49,7 @@ typedef struct cart
 	char *buffer;
 	char *argumen;
 	FILE *fd;
+	char mode;
 } cart_t;
 
 cart_t carrier;
@@ -72,13 +73,16 @@ void push(stack_t **stack_element, unsigned int line_number);
 void pop(stack_t **stack_element, unsigned int line_number);
 void swap(stack_t **stack_element, unsigned int line_number);
 
+/** push functions */
+void push_to_top(stack_t **stack_element);
+void push_to_bottom(stack_t **stack_element);
+
+
 /** print functions **/
 void pall(stack_t **stack_element, unsigned int line_number);
 void pint(stack_t **stack_element, unsigned int line_number);
 void pchar(stack_t **stack_element, unsigned int line_number);
 void pstr(stack_t **stack_element, unsigned int line_number);
-
-
 
 /** math functions **/
 void _nop(stack_t **stack_element, unsigned int line_number);
@@ -93,7 +97,9 @@ int count_nodes(stack_t **stack_element);
 void rotl(stack_t **stack_element, unsigned int line_number);
 void rotr(stack_t **stack_element, unsigned int line_number);
 
-
+/** queue order mode functions **/
+void _stack(stack_t **stack_element, unsigned int line_number);
+void _queue(stack_t **stack_element, unsigned int line_number);
 
 /** exit functions **/
 void exit_failure(stack_t **stack_element, const char *message);

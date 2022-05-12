@@ -56,6 +56,8 @@ char *file_process(char *filename)
 	if (carrier.fd == NULL)
 		file_failure(filename, &stack_element);
 	carrier.nro_line = 0;
+	/**set mode stack(s), queue(q)*/
+	carrier.mode = 's';
 	line_tokenizer(&stack_element);
 	free_all(&stack_element);
 	return ("Success");

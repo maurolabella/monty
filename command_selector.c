@@ -25,6 +25,8 @@ void (*command_selector(char *command))(stack_t **, unsigned int)
 			{"pstr", pstr},
 			{"rotl", rotl},
 			{"rotr", rotr},
+			{"stack", _stack},
+			{"queue", _queue},
 			{NULL, NULL}};
 	while (commands[i].f != NULL)
 	{

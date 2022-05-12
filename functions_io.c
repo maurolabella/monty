@@ -16,7 +16,7 @@ int is_a_number(char *argument)
 	while (argument[pos] != '\0')
 	{
 		if ((argument[pos] >= 48 && argument[pos] <= 57)
-				|| (argument[pos] == '-' && pos == 0))
+		|| (argument[pos] == '-' && pos == 0))
 			pos++;
 		else
 			return (0);
@@ -32,35 +32,17 @@ int is_a_number(char *argument)
  */
 void push(stack_t **stack_element, unsigned int line_number)
 {
-	stack_t *new_node;
-	int new_n;
-
 	if (carrier.argumen)
 	{
 		if (!is_a_number(carrier.argumen))
 			exit_failure(stack_element, "L%d: usage: push integer\n");
-		else
-			new_n = atoi(carrier.argumen);
 	}
 	else
 		exit_failure(stack_element, "L%d: usage: push integer\n");
-	new_node = malloc(sizeof(stack_t));
-	if (!new_node)
-	{
-		fprintf(stderr, "Error: malloc failed\n");
-		free_all(stack_element);
-		exit(EXIT_FAILURE);
-	}
-	new_node->prev = NULL;
-	new_node->n = new_n;
-	new_node->next = *stack_element;
-	if (!(*stack_element))
-		*stack_element = new_node;
+	if (carrier.mode == 's')
+		push_to_top(stack_element);
 	else
-	{
-		(*stack_element)->prev = new_node;
-		*stack_element = new_node;
-	}
+		push_to_bottom(stack_element);
 	(void)line_number;
 }
 
